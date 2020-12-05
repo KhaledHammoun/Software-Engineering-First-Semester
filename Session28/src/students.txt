@@ -1,0 +1,34 @@
+Adam,Arasimowicz,Poland
+Agostina,Rey,Italy
+Alexandru,Jardan,Romania
+Alina,Chelmus,Romania
+Andrei,Soldan,Romania
+Bartosz,Ochedzan,Poland
+Chenben,Tong,China
+Claudiu-Emanuel,Cordunianu,Romania
+Dan,Pintea,Romania
+Dorin,Pascal,Romania
+Eduard,Munteanu,Romania
+Eliza-Bianca,Manciu,Romania
+Esben,Fogh,Denmark
+Iana,Postolachi,Romania
+Jan,Le,Czech Republic
+Junjie,Chen,China
+Khaled,Hammoun,Bulgaria
+Krzysztof,Pacierz,Poland
+Kyra,Tolnai,Hungary
+Luis,Ponton,Spain
+Maria Bianca,Militaru,Romania
+Markéta,Lapčíková,Czech Republic
+Martin,Vosta,Czech Republic
+Milan,Tolnai,Hungary
+Oliver,Sperlik,Slovakia
+Omran,Kayed,Denmark
+Peter,Blasko,Slovakia
+Radovan,Santa,Slovakia
+Simon,Samuel,Denmark
+Tabita-Roxana,Varlan,Romania
+Timothy,Engkar,Netherlands
+Tomas,Ondrejka,Slovakia
+Tymon,Podlowski,Poland
+Zishuo,Sun,China
