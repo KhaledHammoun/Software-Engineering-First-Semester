@@ -1,7 +1,6 @@
 package mseProg3.src;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
 
 class LoanTest {
 

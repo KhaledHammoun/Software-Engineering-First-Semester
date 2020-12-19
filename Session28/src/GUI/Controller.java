@@ -1,170 +1,148 @@
 package GUI;
 
+import javafx.event.Event;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 
-public class Controller {
+public class Controller
+{
 
-  @FXML
-  private MenuItem exitMenuItem;
+  @FXML private MenuItem exitMenuItem;
 
-  @FXML
-  private ToggleGroup projects;
+  @FXML private ToggleGroup projects;
 
-  @FXML
-  private MenuItem aboutMenuItem;
+  @FXML private MenuItem aboutMenuItem;
 
-  @FXML
-  private Tab projectsTab;
+  @FXML private Tab projectsTab;
 
-  @FXML
-  private TextArea projectsTextArea;
+  @FXML private TextArea projectsTextArea;
 
-  @FXML
-  private TextField projectNameTextField;
+  @FXML private TextField projectNameTextField;
 
-  @FXML
-  private TextField projectStatusTextField;
+  @FXML private ComboBox<?> projectStatusComboBox;
 
-  @FXML
-  private Button addProjectButton;
+  @FXML private Button addProjectButton;
 
-  @FXML
-  private Button editProjectButton;
+  @FXML private Button editProjectButton;
 
-  @FXML
-  private ComboBox<?> availableEmployeeComboBox;
+  @FXML private ComboBox<?> availableEmployeeComboBox;
 
-  @FXML
-  private Button assignEmployeeButton;
+  @FXML private Button assignEmployeeButton;
 
-  @FXML
-  private Button removeEmployeeButton;
+  @FXML private Button removeEmployeeButton;
 
-  @FXML
-  private Button saveProjectButton;
+  @FXML private Button saveProjectButton;
 
-  @FXML
-  private TextArea teamMembersTextArea;
+  @FXML private TextArea teamMembersTextArea;
 
-  @FXML
-  private Tab requirementsTab;
+  @FXML private Tab requirementsTab;
 
-  @FXML
-  private TextArea requirementsTextArea;
+  @FXML private TextArea requirementsTextArea;
 
-  @FXML
-  private TextField projectSelectedTextField;
+  @FXML private ComboBox<?> projectSelectedComboBox;
 
-  @FXML
-  private TextField requirementIDTextField;
+  @FXML private TextField requirementIDTextField;
 
-  @FXML
-  private ComboBox<?> requirementStatusComboBox;
+  @FXML private ComboBox<?> requirementStatusComboBox;
 
-  @FXML
-  private ComboBox<?> requirementTypeComboBox;
+  @FXML private ComboBox<?> requirementTypeComboBox;
 
-  @FXML
-  private TextField requirementDescriptionTextField;
+  @FXML private TextField requirementDescriptionTextField;
 
-  @FXML
-  private TextField estimateHoursTextField;
+  @FXML private TextField estimateHoursTextField;
 
-  @FXML
-  private TextField priorityNumberTextField;
+  @FXML private TextField priorityNumberTextField;
 
-  @FXML
-  private TextField deadlineTextField;
+  @FXML private TextField deadlineTextField;
 
-  @FXML
-  private ComboBox<?> responsibleTeamMemberComboBox;
+  @FXML private ComboBox<?> responsibleTeamMemberComboBox;
 
-  @FXML
-  private Button addRequirementButton;
+  @FXML private Button addRequirementButton;
 
-  @FXML
-  private Button editRequirementButton;
+  @FXML private Button editRequirementButton;
 
-  @FXML
-  private Button saveRequirementButton;
+  @FXML private Button saveRequirementButton;
 
-  @FXML
-  private Tab tasksTab;
+  @FXML private Tab tasksTab;
 
-  @FXML
-  private TextArea tasksTextArea;
+  @FXML private TextArea tasksTextArea;
 
-  @FXML
-  private TextField projectSelectedOnTasksTextField;
+  @FXML private ComboBox<?> projectSelectedOnTasksComboBox;
 
-  @FXML
-  private TextField requirementSelectedTextField;
+  @FXML private ComboBox<?> requirementSelectedComboBox;
 
-  @FXML
-  private TextField taskIDTextField;
+  @FXML private TextField taskIDTextField;
 
-  @FXML
-  private ComboBox<?> taskStatusComboBox;
+  @FXML private ComboBox<?> taskStatusComboBox;
 
-  @FXML
-  private TextField taskDescriptionTextArea;
+  @FXML private TextField taskDescriptionTextArea;
 
-  @FXML
-  private TextField taskEstimateTextField;
+  @FXML private TextField taskEstimateTextField;
 
-  @FXML
-  private TextField taskTimeUsedTextField;
+  @FXML private TextField taskTimeUsedTextField;
 
-  @FXML
-  private TextField taskDeadline;
+  @FXML private TextField taskDeadline;
 
-  @FXML
-  private ComboBox<?> taskTeamMembersComboBox;
+  @FXML private ComboBox<?> taskTeamMembersComboBox;
 
-  @FXML
-  private Button addTaskButton;
+  @FXML private Button addTaskButton;
 
-  @FXML
-  private Button editTaskButton;
+  @FXML private Button editTaskButton;
 
-  @FXML
-  private Button saveTaskButton;
+  @FXML private Button saveTaskButton;
 
-  @FXML
-  private Tab employeesTab;
+  @FXML private Tab employeesTab;
 
-  @FXML
-  private TextArea employeeTextArea;
+  @FXML private TextArea employeeTextArea;
 
-  @FXML
-  private TextField employeeIDTextField;
+  @FXML private TextField employeeIDTextField;
 
-  @FXML
-  private TextField employeeFirstName;
+  @FXML private TextField employeeFirstName;
 
-  @FXML
-  private TextField employeeLastName;
+  @FXML private TextField employeeLastName;
 
-  @FXML
-  private ComboBox<?> employeeRoleComboBox;
+  @FXML private ComboBox<?> employeeRoleComboBox;
 
-  @FXML
-  private TextArea employeeTaskTextArea;
+  @FXML private TextArea employeeTaskTextArea;
 
-  @FXML
-  private Button addEmployeeButton;
+  @FXML private Button addEmployeeButton;
 
-  @FXML
-  private Button editEmployeeButton;
+  @FXML private Button editEmployeeButton;
 
-  @FXML
-  private Button saveEmployeeButton;
+  @FXML private Button saveEmployeeButton;
 
+  public void initialize()
+  {
+
+  }
+
+  public void handleActions(ActionEvent e)
+  {
+    if (e.getSource() == addProjectButton)
+    {
+      projectNameTextField.setEditable(true);
+      projectStatusComboBox.setDisable(false);
+    }
+    else if (e.getSource() == editProjectButton)
+    {
+      projectNameTextField.setEditable(true);
+      projectStatusComboBox.setDisable(false);
+    }
+    else if (e.getSource() == exitMenuItem)
+    {
+      Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
+          "Do you really want to exit the program?", ButtonType.YES,
+          ButtonType.NO);
+      alert.setTitle("Exit");
+      alert.setHeaderText(null);
+
+      alert.showAndWait();
+
+      if (alert.getResult() == ButtonType.YES)
+      {
+        System.exit(0);
+      }
+    }
+  }
 }

@@ -2,8 +2,6 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.stage.Popup;
-import javafx.stage.PopupWindow;
 
 public class StudentController
 {
@@ -40,11 +38,11 @@ public class StudentController
   private void updateStudentBox()
   {
     int currentIndex = studentBox.getSelectionModel().getSelectedIndex();
+
     studentBox.getItems().clear();
 
     StudentList students = adapter.getAllStudents();
     for (int i = 0; i < students.size(); i++)
-
     {
       studentBox.getItems().add(students.get(i));
     }
@@ -63,7 +61,7 @@ public class StudentController
   {
     //The tabChanged method might be automatically called before the initialize method,
     //as the GUI is loaded. I.e. adapter could be null, and cause a NullPointerException
-    if (adapter != null)
+    if(adapter!=null)
     {
       StudentList students = adapter.getAllStudents();
       allStudentsArea.setText(students.toString());
@@ -108,8 +106,8 @@ public class StudentController
     else if (e.getSource() == exitMenuItem)
     {
       Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
-          "Do you really want to exit the program?", ButtonType.YES,
-          ButtonType.NO);
+          "Do you really want to exit the program?",
+          ButtonType.YES, ButtonType.NO);
       alert.setTitle("Exit");
       alert.setHeaderText(null);
 
@@ -146,14 +144,10 @@ public class StudentController
     }
     else if (e.getSource() == aboutMenuItem)
     {
-      Button newButton = new Button();
-      ContextMenu test = new ContextMenu();
-
       Alert alert = new Alert(Alert.AlertType.INFORMATION);
       alert.setHeaderText(null);
       alert.setTitle("About");
-      alert.setContentText(
-          "This is just a little program that demonstrates some of the GUI features in Java");
+      alert.setContentText("This is just a little program that demonstrates some of the GUI features in Java");
       alert.showAndWait();
     }
   }
@@ -163,7 +157,7 @@ public class StudentController
   public void tabChanged(Event e)
   {
     //Check which Tab is selected, and update the appropriate control
-    if (allStudentsTab.isSelected())
+    if(allStudentsTab.isSelected())
     {
       updateStudentArea();
     }

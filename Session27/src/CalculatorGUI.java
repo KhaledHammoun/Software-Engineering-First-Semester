@@ -90,11 +90,11 @@ public class CalculatorGUI extends Application
 
     public void handle (ActionEvent e)
     {
-      String[] toCalc = result.getText().split(new String[]{"*", "/"});
+      //String[] toCalc = result.getText().split(new String[]{"*", "/"});
 
       if(e.getSource()==additionButton)
       {
-        calculator.addition();
+        //calculator.addition();
       }
     }
   }
